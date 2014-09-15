@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+float bezpecnedeleni (float delenec, float delitel) {
+
+    if(delitel!=0) {
+        float vysledek = delenec/delitel;
+        return vysledek;
+    }   else return 0;
+
+}
+
+int main() {
+
+    float a, b;
+    scanf("%f", &a);
+    scanf("%f", &b);
+    printf("vysledek je %f\n", bezpecnedeleni(a,b));
+
+    return 0;
+
+}
